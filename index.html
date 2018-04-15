@@ -1,0 +1,211 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="StyleSheet" href="style.css" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Learning to Poke by Poking</title>
+<style type="text/css">
+#primarycontent h1 {
+  font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+  text-align: center;
+}
+#primarycontent p {
+  text-align: center;
+}
+#primarycontent {
+  text-align: justify;
+}
+#primarycontent p {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#primarycontent p iframe {
+  text-align: center;
+}
+.featart {
+  margin:4px;
+}
+.hoverdiv {
+  background-color:black;
+  margin-top:2px;
+  margin-bottom:10px;
+  width:100%;
+}
+.hoverdiv:hover {
+  background-color:white;
+}
+
+iframe {
+  margin: auto;
+}
+</style>
+
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+<script type="text/javascript"
+  src="http://www.maths.nottingham.ac.uk/personal/drw/LaTeXMathML.js">
+</script>
+<!--
+<script type="text/javascript" src="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.standardarticle.css" />
+-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79839829-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+<div id="primarycontent">
+<h1 align="center" itemprop="name">
+  <strong>
+    What will Happen Next? <br> Forecasting Player Moves in Sports Videos
+  </strong></h1>
+
+  <table align=center width=500px>
+    <tr>
+      <td align=center width=100px>
+      <center><span style="font-size:20px"><a href="http://www.path.berkeley.edu/people/staff-directory/panna-felsen" target="_blank">Panna Felsen</a></span></center></td>
+      <td align=center width=100px>
+      <center><span style="font-size:20px"><a href="https://people.eecs.berkeley.edu/~pulkitag/" target="_blank">Pulkit Agrawal</a></span></center></td>
+      <td align=center width=100px>
+      <center><span style="font-size:20px"><a href="http://people.eecs.berkeley.edu/~malik" target="_blank">Jitendra Malik</a></span></center></td>
+    <tr/>
+   </table>
+  <table align=center width=600px>
+    <tr>
+      <td align=center width=600px><center><span style="font-size:18px">University of California, Berkeley</span></center></td>
+    <tr/>
+  </table>
+  <table align=center width=400px>
+    <tr>
+      <td align=center width=150px>
+      <center><span style="font-size:18px"><a href="http://iccv2017.thecvf.com/" target="_blank">ICCV 2017</a></span></center></td>
+    <tr/>
+  </table>
+  <!-- <table align=center width=500px> -->
+    <!-- <tr> -->
+      <!-- <td align=center width=200px><center><span style="font-size:20px"><a href="resources/icml17.pdf">[Download Paper]</a></span></center></td> -->
+      <!-- <td align=center width=200px><center><span style="font-size:20px"><a href='https://github.com/pathak22/noreward-rl'>[Github Code]</a></span></center></td> -->
+    <!-- <tr/> -->
+</table><br/>
+
+<center>
+<img src="img/who_will_get_ball.png" itemprop="image" width="700"
+ alt="teaserImage">
+ </center>
+
+<h3>Abstract</h3>
+
+
+<p>A large number of very popular team sports involve the act of one team trying to score
+  a goal against the other. During this game play, defending players constantly try to predict
+  the next move of the attackers to prevent them from scoring, whereas attackers constantly
+  try to predict the next move of the defenders in order to defy them and score.
+  Such behavior is a prime example of the general human faculty to make predictions about the future
+  and is an important facet of human intelligence. An algorithmic solution to
+  learning a model of the external world from sensory inputs in order to make
+  forecasts is an important unsolved problem. In this work we develop a generic
+  framework for forecasting future events in team sports videos directly from
+  visual inputs. We introduce water polo and basketball datasets towards this
+  end and compare the predictions of the proposed methods against expert and
+  non-expert humans.
+</p>
+
+<h3>Paper</h3>
+  <p style="padding-left: 10px; padding-right: 10px;">
+    Paper is available at:
+    <a href='http://openaccess.thecvf.com/content_ICCV_2017/papers/Felsen_What_Will_Happen_ICCV_2017_paper.pdf'>[pdf]</a>
+  </p>
+
+<h3 style="clear:both">Data</h3>
+  <p style="padding-left: 10px; padding-right: 10px;">
+    <table style="margin: 0 auto">
+      <tr><td>
+      <img src="img/annotations.png" itemprop="image" alt="result" width="600">
+      </td></tr>
+    </table>
+  </p>
+  <p style="padding-left: 10px; padding-right: 10px;">
+   We provide water polo and basketball datasets along with detailed annotations
+   and human performance metrics as a benchmark for prediction tasks. We will
+   provide link to this dataset soon.
+  </p>
+
+<h3>Basketball</h3>
+
+<p style="padding-left: 10px; padding-right: 10px;">
+  <table style="margin: 0 auto">
+    <tr><td>
+    <img src="img/bball_pred.png" itemprop="image" alt="result" width="400">
+    </td></tr>
+  </table>
+</p>
+
+<p style="padding-left: 10px; padding-right: 10px;">
+ Predicting the ball location is just one out of many events of interest.
+ For example, whether a teammate would screeno r whether dribble or a break would
+ take place are of great interest in basketball. In a manner similar to predicting
+ where the ball will be at times {t + 1, t + 2}s, we also predict which out 16 events of
+ interest will happen in the future.
+ </p>
+
+
+<!-- <h3 style="clear:both">Additional Materials</h3>
+-->
+
+<!--
+<h3 style="clear:both">Related Papers</h3>
+<table>
+<tr><td style="border-bottom:solid 1px #ccc">
+<p style="padding-left: 10px; padding-right: 10px; margin-top:10px;"><b>Other works on &ldquo;Self-Supervised&rdquo; Learning</b></p></td></tr>
+<tr><td>
+<p style="padding-left: 10px; padding-right: 10px;">P. Agrawal, J. Carreira and J. Malik <a href="http://www.cs.berkeley.edu/~pulkitag/lsm/lsm.html">Learning to See by Moving</a> ICCV 2015<p>
+</td></tr></table>
+-->
+
+
+<h3 style="clear:both">Acknowlegements</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+We thank James Graham, of the University of the Pacific, for providing the
+water polo game film. We thank Saurabh Gupta and Shubham Tulsiani for helpful
+discussions. This research was supported, in part,
+by Berkeley Deep Drive sponsors, and ONR MURI N00014-14-1-0671.
+<br><br>
+
+<h3 style="clear:both">Website Template</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+The template for this website has been adopted from Carl Doersch.
+</p>
+
+<h3 style="clear:both">Contact</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+For comments/questions, contact Panna Felsen or
+<a href="http://people.eecs.berkeley.edu/~pulkitag">Pulkit Agrawal</a>.</p>
+</div>
+
+</body>
+</html>
